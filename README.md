@@ -1,6 +1,11 @@
 # 101416014_lab_test_chat_app
 Lab test 1 
+
 In this test i have made a real-time chat application that includes features such as user authentication, room-based messaging, and persistence using MongoDB.
+
+
+Technologies:Using Socket.io, Express, and Mongoose for the backend, HTML5, CSS, Bootstrap, fetch, and jQuery for the frontend design.
+
 
 <img width="1710" alt="Screenshot 2025-02-05 at 7 09 06 PM" src="https://github.com/user-attachments/assets/bfa4119f-d110-47d5-8516-f7a6ef177646" />
 <img width="1710" alt="Screenshot 2025-02-05 at 7 10 09 PM" src="https://github.com/user-attachments/assets/5a8c41fa-3b3e-4f11-8dc7-a4ab85198aa3" />
