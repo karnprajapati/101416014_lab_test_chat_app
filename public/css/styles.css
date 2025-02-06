@@ -1,0 +1,139 @@
+/* public/css/style.css
+.chat-messages {
+    overflow-y: auto;
+    height: calc(100vh - 150px);
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    max-width: 75%;
+}
+
+.message.received {
+    background-color: #f1f0f0;
+    margin-right: auto;
+}
+
+.message.sent {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.message .username {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.message.sent .username {
+    color: #fff;
+}
+
+.message .time {
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: 0.2rem;
+}
+
+.message.sent .time {
+    color: #fff;
+}
+
+.list-group-item.active {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#typing-indicator {
+    font-style: italic;
+    height: 20px;
+} */
+
+
+/* Style the chat messages */
+.chat-messages {
+    overflow-y: auto;
+    height: calc(100vh - 150px);
+    padding-right: 10px; /* Add padding to prevent message overlap with scrollbar */
+}
+
+/* Style for message bubbles */
+.message {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1.2rem;  /* Slightly increased padding */
+    border-radius: 1rem;
+    max-width: 75%;
+    word-wrap: break-word;  /* Ensures long words wrap correctly */
+}
+
+/* Style for received messages */
+.message.received {
+    background-color: #f1f0f0;
+    margin-right: auto;
+}
+
+/* Style for sent messages */
+.message.sent {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+/* Style for username */
+.message .username {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+/* Style for sent message usernames */
+.message.sent .username {
+    color: #fff;
+}
+
+/* Style for message time */
+.message .time {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 0.2rem;
+}
+
+/* Style for sent message times */
+.message.sent .time {
+    color: #fff;
+}
+
+/* Active room style */
+.list-group-item.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white; /* Make the text white for better visibility */
+}
+
+/* Typing indicator style */
+#typing-indicator {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #777; /* Make the typing indicator slightly lighter */
+    height: 20px;
+    padding-top: 0.5rem; /* Adds space above the typing indicator */
+    display: none;  /* Hide it by default */
+}
+
+/* Make it responsive for small screens */
+@media (max-width: 768px) {
+    .chat-messages {
+        height: calc(100vh - 120px); /* Adjust the height for mobile */
+    }
+    
+    .message {
+        padding: 0.5rem 1rem; /* Reduce padding on small screens */
+    }
+
+    .message .username, .message .time {
+        font-size: 0.75rem; /* Adjust font size for smaller devices */
+    }
+}
